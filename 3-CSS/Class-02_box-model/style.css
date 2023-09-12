@@ -1,0 +1,27 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.square {
+    background: lightseagreen;
+    height: 120px;
+    width: 120px;
+    padding: 16px;
+ 
+}
+.square {
+    background:lightseagreen;
+    height: 120px;
+    width: 120px;
+    padding: 16px;
+ 
+}
+#squareX {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+#squareY {
+    background: orange;
+    display: inline-block;
+}

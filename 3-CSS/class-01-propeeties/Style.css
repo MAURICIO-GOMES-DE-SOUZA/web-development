@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(218, 152, 30);
+font-weight: 500;
+font-size: 30;
+letter-spacing: 3px;
+}
+h2{
+    color: hwb(219 11% 27% / 0.69);
+}
+p {
+    font-family: 'Roboto', sans-serif;
+font-weight: 450;
+font-weight: 400;
+letter-spacing: 4px;
+line-height: 24px;
+}

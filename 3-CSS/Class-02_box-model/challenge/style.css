@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.global {
+    height: 320px;
+    width: 320px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg, 
+        #6569ca,
+        #bc318f 30%,
+        #e33f5f 50%,
+        #f77638 70%,
+        #fec66d 90%
+        );
+     
+}
+.square{
+height: 220px;
+width: 220px;
+border: 25px solid white;
+border-radius: 30%;
+display: flex;
+position:relative;
+}
+.circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 24px solid white;
+    margin: auto;
+    }
+.dot{   
+    height: 32px;
+    width: 32px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 12px;
+    right: 12px; 
+}

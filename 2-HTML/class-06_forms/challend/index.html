@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>For challend</title>
+    <style>
+        form,header{
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CADASTRO DE ALUNOS</h1>
+        <br>
+    </header>
+        <main>
+            <form method="get">
+                <fieldset>
+                <legend> DADOS PASSOAIS</legend>
+                    <section>
+                        <label for="name">Nome:</label>
+                            <input 
+                            type="text" 
+                            id="name"
+                            name="nome"
+                            placeholder="digite seu nome aqui"
+                            required
+                            autofocus
+                            >
+                    </section>
+                   
+                    <br><br> <section>
+                        <label for="birfh">Nascimento:</label>
+                            <input 
+                            type="date" 
+                            id=""
+                            name="nome"
+                            placeholder="Digite sua Data de Nascimento aqui"
+                            required
+                            
+                            >
+                    </section>
+                    </BR>
+    <section>
+        <label for="RG">RG:</label>
+            <input 
+            id="RG"
+            name="RG"
+            type="text"
+            required
+            placeholder="preencha seu RG"
+            pattern="[0-9]{11}"
+            maxlength="11"
+            minlength="8"
+            title="o campo precisa ter 11 digitos"
+            >
+    </section>
+    <br>
+    <section>
+        <label for="CPF">CPF</label>
+            <input 
+            type="text"
+            id="CPF"
+            name="CPF"
+            maxlength="11"
+            title="digite os 11 números do seu cpf"
+            pattern="[0-9]{11}"       
+            placeholder="digite seu CPF">
+    </section>
+    <br>
+    <section>
+           <span>
+
+            <label for="masc">masculino</label>
+              <input 
+              type="radio"
+              id="masculino"
+              name="sexo"
+              value="M"
+             required>
+      
+           </span>
+           <span>
+
+            <label for="masc">feminino</label>
+              <input 
+              type="radio"
+              id="feminino"
+              name="sexo"
+              value="F"
+              required>
+      
+           </span>
+        </section>
+
+                </fieldset>
+                <br><br>
+                <fieldset>
+                 <legend>
+                        <strong>LINGUAGEM DE DOMÍNIO</strong></legend>
+                        <span>
+                            <input 
+                            type="checkbox"
+                            id="html"
+                            name="html"
+                            >
+                            <label for="html">HTML</label>
+                        </span>
+                        <span>
+                            <input 
+                            type="checkbox"
+                            id="CSS"
+                            name="CSS"
+                            >
+                            <label for="CSS">CSS</label>
+                        </span>
+                        <span>
+                            <input 
+                            type="checkbox"
+                            id="javascript"
+                            name="javascript"
+                            >
+                            <label for="javascript">javascript</label>
+                        </span>
+
+
+                </fieldset>
+                <br><br>
+                <fieldset>
+                
+                         <legend> LOGIN</legend>
+                            <label for="email">EMAIL</label>
+                                <input type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="digite seu email">
+    
+                
+          
+                
+            <section>
+                    <label for="PASSWORD">PASSWORD</label>
+                        <input type="text"
+                        id="PASSWORD"
+                        name="PASSWORD"
+                        placeholder="digite sua senha">
+                    </section>
+                    <br><br>
+             </section>
+             <section>
+                 <label for="image"> <strong>Iamgem</strong> </label>
+                 <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*">
+             </section>
+             
+        </fieldset>
+        <br> <br>
+        <fieldset>
+            <legend>OBSERVAÇOES</legend>
+               
+                <textarea 
+                name="obs" 
+                id="obs" 
+                cols="30" 
+                rows="10"></textarea>
+        </fieldset>
+
+              <br><br>
+                <button type="submit"> enviar </button>
+                <button type="reset"> limpar </button>
+            </form>
+        </main>
+   
+</body>
+</html>

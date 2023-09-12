@@ -1,0 +1,62 @@
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  animation:topDow 1s ;
+}
+p {
+  animation: fadeIn 3s;
+}
+.square {
+  width: 120px;
+  height: 120px;
+  background: purple;
+  /* transition-property: 
+  background-color,
+   transform;
+  transition-duration: 1s;
+  transition-delay: 2;
+  transition-timing-function: ease-in-out; */
+  transition: backgroud-color 1s 3s ease-in-out, tranforme 1s 3s ease-in-out;
+}
+
+.square:hover {
+  background: teal;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.spinnerLoading {
+  width: 96px;
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes topDow {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
