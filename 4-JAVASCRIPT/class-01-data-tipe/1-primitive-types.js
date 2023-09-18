@@ -16,14 +16,15 @@ console.log( number1 + number2);
 
 let isStudentInCvt = false;
 
+//lógcos:
 console.log(typeof isStudentInCvt);
 console.log(10 == 10);
 console.log(10 === "10");
 console.log(10 > 20);
 console.log(10 < 20);
-console.log(10 != 20);
+console.log(10 != 20); //diferente
 
-let yourName = prompt("Digite seu nome: ");
+let yourName = prompt("Digite seu nome: "); //template streang: "digite seu nome"
 console.log(yourName);
 
 let Soma = prompt("Vamos somar!: ");
