@@ -7,7 +7,7 @@ const array = ["Matrix", "IT", "ET", "JUmanji", "Barbie"];
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index];
 //     console.log(element);
-    // }
+//     }
 
 // array.forEach((value, index) => [
 // console.log({value, index})

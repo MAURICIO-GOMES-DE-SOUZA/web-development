@@ -22,7 +22,7 @@ const ArrayBiD = [["A", "B", "C"], [1, 2, 3], [[7, 8, 9]]];
 
 for (let i = 0; i < ArrayBiD.length; i++) {
   for (let j = 0; j < ArrayBiD.length; j++) {
-      console.log(arrayBid[i][j]);
+      console.log(ArrayBiD[i][j]);
    }
 
   }
@@ -32,7 +32,7 @@ for (const i of myArray) {
     console.log((i));
 }
 
-for (const i of arrayBid) {
+for (const i of ArrayBiD) {
     for (const j of i) {
         console.log(j);
     }

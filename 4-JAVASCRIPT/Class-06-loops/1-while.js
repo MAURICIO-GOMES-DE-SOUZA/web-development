@@ -12,7 +12,7 @@ while (count <= 10) {
 
 
     while (true) {
-        let resp = prompt ("Deseja encerrr?");
+        let resp = prompt ("Deseja encerrar?");
     
         if(resp) {
             alert("Obrigado pela sua vista!")

@@ -20,7 +20,8 @@ const expenses = [
   "R$ 120,34",
   "food",
   "R$ 1300,62",
-  "R$ 889,",
+  "R$ 898,94",
+  
 ];
 
 const incomeValues = incomes.filter((value) => value.includes("R$ "));
