@@ -1,50 +1,74 @@
--- DDL
-CREATE TABLE IF NOT EXISTS students (
-    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+-- DDL(Definição)
+CREATE TABLE IF NOT EXISTS students( 
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     cpf TEXT NOT NULL UNIQUE,
-     age NUMERIC
+    age NUMERIC
 );
+
+ALTER TABLE students 
+ADD COLUMN city TEXT
+NOT NULL DEFAULT "Jucás";
+
+ALTER TABLE students
+ADD COLUMN cpf TEXT;
+
+ALTER TABLE students 
+DROP COLUMN city;
+
 
 DROP TABLE students;
 
--- DML
-INSERT INTO students (name, age) VALUES 
-    ("Pedrinho", 20), 
-    ("Luíza", 19);
+-- DML(Manipulação)
+INSERT INTO students (name, age) VALUES("Eduardo", 19);
+INSERT INTO students (name, age) VALUES("Luiza", 19);
+INSERT INTO students (name, age) VALUES("Emanuel", 37);
+INSERT INTO students (name, age) VALUES("wellington", 44);
+INSERT INTO students (name, age) 
+VALUES
+("Dudu", 19),
+("Jorge", 28),
+("Natã", 19),
+("Erick", 28);
 
-UPDATE students SET age = 21 WHERE name = "Pedrinho";
-UPDATE students SET age = 19 WHERE id = 2;
-UPDATE students SET name = "Dudu", age = 20 WHERE id = 4;
+INSERT INTO students (name, cpf, city, age) 
+VALUES
+("Eduardo", "123.123.123-01", "Iguatu", 19),
+("Luiza","123.123.123-02", "Iguatu", 19),
+("Emanuel", "123.123.123-03", "Iguatu", 37),
+("wellington","123.123.123-04", "Iguatu", 44);
 
-DELETE FROM students;
-DELETE FROM students WHERE id = 6; 
+UPDATE students SET age = 17; --NÂO FAÇA ISSO JAMAIS--
+UPDATE students SET city = "Saboeiro" 
+WHERE id = 8; 
 
---DQL
+UPDATE students 
+SET age = 17, name = "Cicero" 
+WHERE id = 1;
+
+UPDATE students 
+SET age = 18
+WHERE id = 5;
+
+DELETE FROM students;--NÃO FAÇA ISSO--
+DELETE FROM students WHERE id = 9;
+DELETE FROM students 
+WHERE id >= 8 
+AND id <= 9;
+
+-- DQL
 SELECT * FROM students;
+SELECT name FROM students WHERE id = 1;
 
-SELECT NAME, AGE
-FROM students
-WHERE id = 7;
+SELECT id, name, age 
+FROM students 
+WHERE id > 2;
 
-SELECT * FROM students
-WHERE id = 6 OR id =8 ;
+SELECT * FROM students 
+WHERE age >= 10 AND age <= 20;
 
-SELECT * FROM students
-WHERE id = 6 ORDER BY  age DESC;
- 
+SELECT * FROM students 
+WHERE age = 18 OR age = 17;
 
- 
-
-
---DDL HÁ QUEM DIGA QUE A 3 É IGUAL A 1....
-ALTER TABLE students
-ADD COLUMN city TEXT;
-
--- challenge DML 
-UPDATE students 
-SET city = "Jucás";
-
-UPDATE students 
-SET city = "sABOEIRO"
-WHERE id = 6; 
+SELECT * FROM students 
+WHERE age >= 10 ORDER BY age DESC;
