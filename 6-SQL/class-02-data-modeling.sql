@@ -2,7 +2,7 @@ CREATE TABLE students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
      email TEXT UNIQUE NOT NULL,
-     id_course INTEGER  REFERENCES courses(id)
+     id_course INTEGER  REFERENCES courses(id) ON DELETE CASCADE
 );
 
 DROP TABLE students;
@@ -29,4 +29,13 @@ INSERT INTO courses (name, workload)VALUES
 SELECT * FROM students;
 SELECT * FROM courses;
 
+--INNER, RIGHT, LEFT, FULL
+SELECT students.name, courses.name AS course
+ FROM students
+LEFT JOIN courses
+ON students.id_course = courses.id
+WHERE course IS NOT NULL;
 
+
+DELETE FROM students WHERE id=1;
+DELETE FROM courses WHERE id= 2;
