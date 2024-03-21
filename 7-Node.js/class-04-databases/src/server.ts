@@ -1,6 +1,6 @@
 import express from "express";
 import { router } from "./routes";
-import { sqliteConection } from "./sqlite3";
+import { sqliteConection } from "./databases/sqlite3";
 
 const app = express();
 const port = 3000;

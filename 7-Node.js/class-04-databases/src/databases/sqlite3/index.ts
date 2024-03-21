@@ -9,3 +9,4 @@ export async function sqliteConection(): Promise<sqlite.Database> {
   });
   return database
 }
+//este arquivo vai ser default vamos só compiar e colar
